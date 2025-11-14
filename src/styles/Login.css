@@ -1,0 +1,256 @@
+.Principal-login{
+    width: 100%;
+    height: 100vh;
+    background:linear-gradient(130deg ,#effdf3, #d6fbe7, #a8e8c7);   
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+}
+.login{
+    width: 32%;
+    height: 80vh;
+    border-radius: 10px;
+    border: 2px solid #e5e5e5;
+    background: white ;
+    padding: 1%; 
+    display: flex;
+    flex-direction: column;
+    
+}
+.logs{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.title{
+    width: 10%;
+    font-size: 20px;
+    font-weight: 400;
+    margin-left: 4%;
+}
+.logo{
+    width: 100%;
+    height: 15%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.Contend-logo{
+    width: 15%;
+    height: 80%;
+    background-color: #00a63e ;
+     display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 100%;
+}
+.image-logo{
+    width: 200px;
+    height: 100px;
+}
+.title-login{
+    width: 100%;
+    height: 20%;
+    display: flex;
+    place-items: center;
+    flex-direction: column;
+    padding: 15px;
+    text-align: center;
+}
+.Title-page{
+    font-weight:400;
+    font-size: 20px;
+    padding-bottom: 10px;
+
+}
+.description-page{
+    color: rgb(144, 142, 142);
+}
+.form-login{
+    width: 100%;
+    height: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    padding-left:8%;
+    
+}
+.title-email{
+    font-weight: 400;
+}
+.inputs{
+width: 90%;
+height: 40px;
+background-color: #f3f3f5 ;
+border: 2px solid transparent;
+border-radius: 5px;
+padding-left: 10px;
+margin-bottom: 5%;
+}
+.inputs:focus {
+  border: 2px solid rgb(150, 150, 150);
+  outline: none;
+  
+  box-shadow: 5px, 2px, 3px gray;
+}
+
+.submit{
+    width: 90%;
+    height: 40px;
+    background-color: #00a63e;
+    color: #f1f1f1;
+    border-radius: 10px;
+    border: 2px solid transparent;
+    font-size: 15px;
+}
+
+.submit:active{
+    background-color: #09d152;
+}
+.demostracion{
+    width: 100%;
+    height: 10%;
+    display: flex;
+    align-items: center;
+    flex-direction: column; 
+    
+}
+.options{
+    width: 100%;
+    height: auto;
+    display:  flex;
+    justify-content: center;
+    gap: 15px;
+    align-items: center;
+    margin-top: 10px;
+}
+.user-type{
+    width: 30%;
+    height: auto;
+    padding: 5px;
+    background-color: transparent;
+    border-radius: 10px;
+    border: 1px solid gray;
+}
+.user-type:active{
+    background-color: rgb(200, 197, 197);
+}
+.cambio{
+    margin-top: 5%;
+ width: 100%;
+    height: 30%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.Link-cambio{
+    width: 100%;
+    height: auto;
+    background-color: transparent;
+    border: none;
+    color: #00a63e;
+
+}
+
+/*Registros */
+.form-registros{
+   width: 100%;
+    min-height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    padding-left:8%;
+   
+}
+
+.link-registro{
+     width: 32%;
+    height: 80vh;
+    border-radius: 10px;
+    border: 2px solid #e5e5e5;
+    background: white ;
+    padding: 1%; 
+    display: flex;
+    flex-direction: column;
+}
+.registro-inputs{
+ width: 90%;
+height: 30px;
+background-color: #f3f3f5 ;
+border: 2px solid transparent;
+border-radius: 5px;
+padding-left: 10px;
+margin-bottom: 5%;
+}
+
+.registro-inputs:focus{
+    border: 2px solid rgb(150, 150, 150);
+  outline: none;
+  
+  box-shadow: 5px, 2px, 3px gray;
+}
+.Registrarme{
+     width: 90%;
+    height: 30px;
+    background-color: #00a63e;
+    color: #f1f1f1;
+    border-radius: 10px;
+    border: 2px solid transparent;
+    font-size: 15px;
+}
+.Registrarme:active{
+        background-color: #09d152;
+}
+.formulario-registro{
+    width: 100%;
+    min-height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    padding-left:8%;
+}
+
+@media screen and (max-width: 767px) {
+  .login{
+    width: 90%;
+    height: 70vh;
+    border-radius: 10px;
+    border: 2px solid #e5e5e5;
+    background: white ;
+    padding: 2%; 
+    
+}
+  .logo{
+    width: 100%;
+    height: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.Contend-logo{
+    width: 15%;
+    height: 80%;
+    background-color: #00a63e ;
+     display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 100%;
+}
+.image-logo{
+    width: 200px;
+    height: 100px;
+}
+.link-registro{
+     width: 90%;
+    height: 70vh;
+    border-radius: 10px;
+    border: 2px solid #e5e5e5;
+    background: white ;
+    padding: 2%; 
+}
+}

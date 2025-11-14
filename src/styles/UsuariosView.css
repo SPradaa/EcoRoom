@@ -1,0 +1,59 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+.principal-Contend{
+    width: 100%;
+    height: auto;
+    display: flex;
+    background-color: #f9fafb;
+    flex-direction: column;
+}
+.Controladores{
+    width: 100%;
+    height: auto;
+    padding: 10px 10px; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap:20px;
+    flex-direction: column;
+}
+.agrupacion{
+    width: fit-content ;
+    background-color: #ececf0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 8px 20px;
+    border-radius: 25px;
+}
+.btn-cambios-sala{
+    padding: 4px 50px;
+    border-radius: 10px;
+    margin-right: 5px;
+    background-color: white;
+    border: none;
+    transition: background-color 0.3s ease-in-out, box-shadow 0.5s ease-in-out;
+}
+.btn-cambios-reserva{
+    padding: 4px 50px;
+    border-radius: 10px;
+    margin-right: 5px;
+    background-color: none;
+    border: none;
+    transition: background-color 0.3s ease-in-out, box-shadow 0.5s ease-in-out;
+}
+.salas{
+width: 100%;
+height: 300px;
+background-color: aqua;
+display: flex;
+}
+.reservas{
+width: 100%;
+height: 300px;
+background-color: goldenrod;
+display: none;
+}
