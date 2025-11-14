@@ -1,0 +1,155 @@
+ .targets{
+    width: 30%;
+    flex-wrap: wrap;
+    gap: 20px;
+ }
+.target-card {
+  font-family: Arial, Helvetica, sans-serif;
+  width: 100%;
+  height: auto;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 26px;
+  margin: 12px;
+  background-color: #f9f9f9;
+  box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-wrap: wrap;
+  overflow: hidden;
+  position: relative;
+  flex-direction: column;
+}
+.target-image {
+  width: 100%;
+  height: auto;
+  border-radius: 4px;
+  margin-bottom: 12px;
+}
+.target-title {
+  width: 100%;
+  height: auto;
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 8px;
+  color: #333;
+  font-weight: 400;
+  padding: 5px;
+}
+.target-description {
+  width: 100%;
+  height: auto;
+  font-size: 14px;
+  margin-bottom: 8px;
+  color: #555;
+  padding:3px;
+}
+.target-estado {
+  width: 150px;
+  height: auto;
+  font-size: 16px;
+  border-radius: 12px;
+  text-align: center;
+  font-weight: 300;
+  position: absolute;
+  top: 20px;
+  right: 16px;
+}
+
+.capacidad ,.precio {
+    font-size: 15px;
+    font-weight: 200;
+    color: #222;
+    padding: 16px;
+}
+
+.precio-sala {
+    font-weight: 700;
+    color: #00a63e;
+    padding: 16px;
+}
+.reservar-button {
+  width: 100%;
+  height: 40px;
+  background-color: #00ce55;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-top: auto;
+}
+.reservar-button:hover {
+  background-color: #018933;
+}
+
+.sala-info {
+    display: flex;
+    justify-content: center; 
+    align-items: center;    
+    height: 100vh;          
+    width: 100vw;           
+    position: fixed;      
+    top: 0;
+    left: 0;
+color: rgb(0, 0, 0);
+    background-color: #000000cc; 
+    z-index: 1000;
+    
+}
+.sala-titulo{
+    width: 35%;
+    height: 80%;
+    border-radius: 10px;
+    background-color: #ffffff;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    flex-direction: column;
+    padding: 5% 10px;
+}
+.reserva-text{
+    color: gray;
+    
+}
+.reserva-form{
+    width: 60%;
+    height: auto;
+    display: grid;
+    flex-direction: row;
+    grid-template-columns: 45% 45%;
+    gap: 5%;
+    margin-top: 20px;
+    place-items: center;
+}
+.reserva-input{
+    width: 100%;
+    height: 40px;
+    padding: 10px, 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 0 10px;
+    font-size: 14px;
+    text-align: center;
+    background-color: #f3f3f5;
+}
+label{
+    display: flex;
+    flex-direction: column;
+}
+
+@media screen and (max-width: 767px) {
+    /* Esta regla se aplica a un elemento que es solo el 30% de la pantalla */
+    .targets {
+        width: 90%; /* O 100%, pero 90% es mejor con margen */
+      
+    }
+    .target-card {
+        width: 100%; 
+        /* ... */
+    }
+    .sala-titulo{
+        width: 90%;
+        height: auto;
+    }
+}

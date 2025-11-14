@@ -2,6 +2,8 @@ import React from "react";
 import Navbar from "../components/Navbar";
 import '../styles/UsuariosView.css'
 import { useState } from "react";
+import Salas from "../components/Salas";
+
 
 function UsuariosView () {
     const [cambio, setCambio]= useState(false);
@@ -19,7 +21,7 @@ function UsuariosView () {
             </div>
             <div className="salas"
             style={{display: cambio ? 'none': 'flex'}}
-            ><p>hola estas son las salas</p></div>
+            ><Salas /></div>
             <div className="reservas"
             style={{display: cambio ? 'flex' : 'none'}}
             ><p>Hola estas son sus reservas</p></div>
