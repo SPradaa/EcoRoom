@@ -1,12 +1,11 @@
  .targets{
     width: 30%;
-    flex-wrap: wrap;
-    gap: 20px;
+    padding: 20px;
  }
 .target-card {
   font-family: Arial, Helvetica, sans-serif;
   width: 100%;
-  height: auto;
+  height: 600px;
   border: 1px solid #ccc;
   border-radius: 8px;
   padding: 26px;
@@ -14,10 +13,10 @@
   background-color: #f9f9f9;
   box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.1);
   display: flex;
-  flex-wrap: wrap;
   overflow: hidden;
   position: relative;
   flex-direction: column;
+  gap: 10px;
 }
 .target-image {
   width: 100%;
@@ -29,7 +28,6 @@
   width: 100%;
   height: auto;
   font-size: 20px;
-  font-weight: bold;
   margin-bottom: 8px;
   color: #333;
   font-weight: 400;
@@ -84,7 +82,8 @@
 }
 
 .sala-info {
-    display: flex;
+    padding: 10px;
+    display: none;
     justify-content: center; 
     align-items: center;    
     height: 100vh;          
@@ -95,7 +94,7 @@
 color: rgb(0, 0, 0);
     background-color: #000000cc; 
     z-index: 1000;
-    
+   
 }
 .sala-titulo{
     width: 35%;
@@ -103,39 +102,122 @@ color: rgb(0, 0, 0);
     border-radius: 10px;
     background-color: #ffffff;
     display: flex;
-    justify-content: start;
+    justify-content: space-evenly;
     align-items: center;
     flex-direction: column;
     padding: 5% 10px;
+    border: 2px solid green;
+
 }
 .reserva-text{
     color: gray;
     
 }
-.reserva-form{
-    width: 60%;
-    height: auto;
+.reserva-form {
+    width: 90%;
     display: grid;
-    flex-direction: row;
-    grid-template-columns: 45% 45%;
-    gap: 5%;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
     margin-top: 20px;
-    place-items: center;
 }
-.reserva-input{
-    width: 100%;
-    height: 40px;
-    padding: 10px, 20px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    padding: 0 10px;
-    font-size: 14px;
-    text-align: center;
-    background-color: #f3f3f5;
-}
-label{
+
+label {
     display: flex;
     flex-direction: column;
+    width: 100%;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.reserva-input {
+    width: 100%;
+    height: 40px;
+    padding: 0 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+    background-color: #f3f3f5;
+}
+.Advertencia{
+  width: 100%;
+    color: red;
+    font-size: 15px;
+    
+}
+
+.Info-Adicional{
+  display: block;
+  padding: 15px 15px;
+  width: 90%;
+  height: auto;
+  background-color: #f0fdf4;
+  border: 1px solid #b6f0c2;
+  border-radius: 8px;
+  margin-top: 5%;
+}
+
+.Resumen-Reserva{
+  width: auto;
+    display: flex;
+    flex-direction: row;
+    align-items: start;
+    gap: 5px;
+    margin-bottom: 10px;
+    justify-content: space-between;
+;
+}
+.Score{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 8px;
+  font-size: 16px;
+  font-weight: 500;
+  color: #22863a;
+}
+.calificacion{
+    font-size: 16px;
+    font-weight: 700;
+    color: #165c26;
+    display: flex;
+    align-items: end;
+    justify-content: end;
+}
+.acciones-Modal{
+  margin-top: 5%;
+    width: 90%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    gap: 20px;
+}
+.confirmar-reserva {
+    width: 60%;
+    height: 40px;
+    background-color: #00ce5660;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+.cerrar{
+    width: 30%;
+    height: 40px;
+    background-color: #ff4d4d6f;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+.cerrar:hover {
+    background-color: #cc0000;
+}
+.confirmar-reserva:hover {
+    background-color: #018933;
 }
 
 @media screen and (max-width: 767px) {
@@ -146,10 +228,21 @@ label{
     }
     .target-card {
         width: 100%; 
+        height: auto;
         /* ... */
     }
+   
     .sala-titulo{
-        width: 90%;
-        height: auto;
-    }
+    width: 90%;
+    height: 70%;
+    border-radius: 10px;
+    background-color: #ffffff;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+    padding: 5% 10px;
+    border: 2px solid green;
+
+}
 }
