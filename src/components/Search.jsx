@@ -2,8 +2,7 @@ import React from "react";
 import '../styles/Search.css'
 
 
-function Salas () {
-    const [query, setQuery] = React.useState("");
+function Salas ({query, setQuery}) {
 
     return(
         <div className="Search">

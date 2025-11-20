@@ -63,7 +63,6 @@ function Targets({ image, title, description, estado, capacidad, precio }) {
     setAdvertencia("");
   }, [inicio, fin, precio]);
 
-  const Reservar = () => {};
   return (
     <div className="targets">
       <div className="target-card">

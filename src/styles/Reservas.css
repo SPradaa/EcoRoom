@@ -1,0 +1,85 @@
+.contendReserv{
+   width: 100%;
+   height: auto;
+   background-color: #f9fafb;
+}
+.contenedor-estadistica{
+    width: 100%;
+    height: 20vh;
+    background-color: transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10%;
+}
+.estadistica{
+    flex-direction: column;
+    width: 30%;
+    height: 50%;
+    background-color: white;
+    border-radius: 15px;
+    border: 1px solid gray;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.estadistica:hover{
+     border:2px solid #00a63e;
+    box-shadow: 10px 10px 10px  #00a63d7e;
+    transform: scale(1.1);
+}
+.cant-reservas{
+    font-size: 20px;
+}
+.contenedor-solicitudes{
+    width: 99%;
+    height: auto;
+    background-color: #ffffff;
+    border-radius: 15px;
+    border: 1px solid gray;
+    padding: 3% 4%;
+    display: flex; 
+    flex-direction:column;
+}
+.target-reserva{
+    width: 100%;
+    height: 10%;
+    border:1px solid gray ;
+    border-radius: 10px;
+    margin-top: 1%;
+    padding: 3% 3%;
+}
+.target-reserva:hover{
+    border:2px solid #00a63e;
+    box-shadow: 10px 10px 10px  #00a63d7e;
+    transform: scale(1.03)
+}
+.tituloSala{
+    font-weight: 400;
+    font-size: 18px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.fecha{
+    font-size: 15px;
+    color: rgb(25, 25, 25);
+    font-weight: 200;
+}
+.horas{
+    background: #f0fdf4;
+    color: green;
+    padding: 0.2% 1%;
+    border-radius:15px;
+    font-size: 12px;
+    border: 1px solid gray;
+    margin-right:10px;
+}
+.total-precio{
+background: #00a63e;
+    color: #f1f1f1;
+    padding: 0.2% 1%;
+    border-radius:15px;
+    font-size: 12px;
+    border: 1px solid gray;
+    margin-right:10px;
+}

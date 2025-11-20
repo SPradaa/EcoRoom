@@ -3,10 +3,11 @@ import Navbar from "../components/Navbar";
 import '../styles/UsuariosView.css'
 import { useState } from "react";
 import Salas from "../components/Salas";
-
+import Reservas from "../components/Reservas/reservas";
 
 function UsuariosView () {
     const [cambio, setCambio]= useState(false);
+
     return(
         <div className="principal-Contend">
             <Navbar
@@ -23,8 +24,10 @@ function UsuariosView () {
             style={{display: cambio ? 'none': 'flex'}}
             ><Salas /></div>
             <div className="reservas"
-            style={{display: cambio ? 'flex' : 'none'}}
-            ><p>Hola estas son sus reservas</p></div>
+            style={{display: cambio ? 'flex' : 'none'}}>
+                <Reservas />
+                
+                </div>
         </div>
 
 
