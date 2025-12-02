@@ -1,0 +1,55 @@
+.admin{
+    width: 100%;
+    height: auto;
+}
+.adminView{
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.Options{
+    width: 40%;
+    height: auto;
+    padding: 0.5% 1%;
+    background-color: #ececf0;
+    margin-top: 1%;
+    border-radius: 50px;
+    display: flex;
+    justify-content: space-evenly;
+}
+.option{
+    width: 33.3%;
+    height: auto;
+    border-radius: 15px;
+    background-color: transparent;
+    border: none;
+    transition: background-color 1s ease, color 0.3s ease;
+}
+
+.option.resumen {
+    background-color: rgb(255, 255, 255);
+}
+.modulos{
+    width: 100%;
+    margin-top: 1%;
+}
+.resumenModule{
+width: 100%;
+height: auto;
+background-color: aqua;
+display: flex;
+}
+.reservaModule{
+width: 100%;
+height: auto;
+background-color: blueviolet;
+display: none;
+}
+.reporteModule{
+width: 100%;
+height: auto;
+background-color: blue;
+display: none;
+}

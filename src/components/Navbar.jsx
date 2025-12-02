@@ -1,14 +1,18 @@
-import react from "react";
+import React from "react";
 import Logo from '../assets/images/Logo.png';
 import '../styles/Navbar.css'
-import { Navigate, useNavigate } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
+
 
 
 function Navbar ({nombre}){
     const navigate = useNavigate();
-    const cerrar =() =>{
-            navigate('/');
-    }
+const cerrar = () => {
+    localStorage.clear(); 
+    navigate('/', { replace: true });
+};
+
+
     return(
         <header className="header">
             <nav className="nav">

@@ -34,6 +34,11 @@ return (
             <p className="info-estadistica">Reservas Activas:</p>
             <p className="cant-reservas">{ObtenerReserva.length}</p>
         </div>  
+
+        <div className="eco-score">
+            <p className="info-estadistica">EcoScore Promedio:</p>
+            <p className="cant-reservas" style={{color : ObtenerReserva.length / 100 <= 5 ? 'red' : 'green'}}>{(ObtenerReserva.length)/100} / 100</p>
+        </div>  
         </div>
 
 

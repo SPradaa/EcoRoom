@@ -25,6 +25,7 @@ function UsuariosView () {
             ><Salas /></div>
             <div className="reservas"
             style={{display: cambio ? 'flex' : 'none'}}>
+               
                 <Reservas />
                 
                 </div>

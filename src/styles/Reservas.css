@@ -10,7 +10,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 10%;
+    gap: 5%;
 }
 .estadistica{
     flex-direction: column;
@@ -23,7 +23,23 @@
     justify-content: center;
     align-items: center;
 }
+.eco-score{
+    flex-direction: column;
+    width: 30%;
+    height: 50%;
+    background-color: #f0fdf4;
+    border-radius: 15px;
+    border: 1px solid #00a63e;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 .estadistica:hover{
+     border:2px solid #00a63e;
+    box-shadow: 10px 10px 10px  #00a63d7e;
+    transform: scale(1.1);
+}
+.eco-score:hover{
      border:2px solid #00a63e;
     box-shadow: 10px 10px 10px  #00a63d7e;
     transform: scale(1.1);
@@ -82,4 +98,41 @@ background: #00a63e;
     font-size: 12px;
     border: 1px solid gray;
     margin-right:10px;
+}
+@media screen and (max-width: 767px) {
+ 
+
+.estadistica{
+    flex-direction: column;
+    width: 90%;
+    height: 50%;
+    background-color: white;
+    border-radius: 15px;
+    border: 1px solid gray;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.contenedor-estadistica{
+    width: 100%;
+    height: 20vh;
+    background-color: transparent;
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items: center;
+    gap: 5%;
+    margin-bottom: 3%;
+}
+.eco-score{
+     flex-direction: column;
+    width: 90%;
+    height: 50%;
+    background-color: #f0fdf4;
+    border-radius: 15px;
+    border: 1px solid #00a63e;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 }
