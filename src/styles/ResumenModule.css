@@ -1,0 +1,34 @@
+.ResumenModule{
+    width: 100%;
+    height: auto;
+}
+.moduleEstadistic{
+    width: 100%;
+    height: auto;
+    background-color: transparent;
+    display: flex;
+    width: 100%;
+    height: auto;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 1%;
+}
+.cardEstadistic{
+width: 30%;
+height: 100px;
+border: 1px solid gray;
+border-radius: 15px;
+display: flex;
+justify-content: center;
+align-items: center;
+flex-direction: column;
+margin-top: 1%;
+}
+.infoEstadistic{
+    font-size: 14px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.dateEstadistic{
+
+}

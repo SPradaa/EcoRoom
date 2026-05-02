@@ -38,7 +38,6 @@
 .resumenModule{
 width: 100%;
 height: auto;
-background-color: aqua;
 display: flex;
 }
 .reservaModule{
@@ -52,4 +51,19 @@ width: 100%;
 height: auto;
 background-color: blue;
 display: none;
+}
+
+
+@media screen and (max-width: 767px) {
+
+    .Options{
+        margin-top: 4%;
+        width: 80%;
+        justify-content: center;
+        align-items: center
+        ;
+    }
+    .modulos{
+        margin-top: 5%;
+    }
 }

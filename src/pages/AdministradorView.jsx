@@ -2,6 +2,7 @@ import React from "react";
 import Dashboard from "../components/admin/Dashboard";
 import "../styles/Administrador.css"
 import { useState} from "react";
+import ResumenModule from "../components/admin/ResumenModule";
 
 
 function AdministradorView () {
@@ -23,13 +24,13 @@ function AdministradorView () {
               <div className="modulos">
 
                 <div className="resumenModule" style={{display : status === 1 ? 'flex' : 'none'}}>
-                    <p>hello</p>
+                   <ResumenModule />
                 </div>
                 <div className="reservaModule" style={{display: status=== 2 ? 'flex' : 'none'}}>
-        <p>no</p>
+        
                 </div>
                 <div className="reporteModule"style={{display: status === 3 ? 'flex' : 'none'}} >
-                <p>si</p>
+               
                 </div>
                 </div>
                

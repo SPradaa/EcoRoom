@@ -9,6 +9,7 @@ function Dashboard (){
         <Navbar
         nombre= "Santiago Prada" />
 
+        
         </div>
     )
 

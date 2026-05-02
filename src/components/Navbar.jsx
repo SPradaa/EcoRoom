@@ -8,7 +8,6 @@ import { useNavigate } from "react-router-dom";
 function Navbar ({nombre}){
     const navigate = useNavigate();
 const cerrar = () => {
-    localStorage.clear(); 
     navigate('/', { replace: true });
 };
 
